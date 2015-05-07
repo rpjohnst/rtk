@@ -1,0 +1,25 @@
+[package]
+name = "rtk"
+version = "0.1.0"
+authors = ["Russell Johnston <rpjohnst@gmail.com>"]
+
+[dependencies]
+libc = "0.1"
+
+[target.x86_64-pc-windows-gnu.dependencies.manifest-sys]
+path = "lib/manifest-sys"
+
+[target.x86_64-pc-windows-gnu.dependencies.winapi]
+git = "https://github.com/rpjohnst/winapi-rs"
+
+[target.x86_64-pc-windows-gnu.dependencies.user32-sys]
+git = "https://github.com/rpjohnst/winapi-rs"
+
+[target.x86_64-pc-windows-gnu.dependencies.kernel32-sys]
+git = "https://github.com/rpjohnst/winapi-rs"
+
+[target.x86_64-pc-windows-gnu.dependencies.gdi32-sys]
+git = "https://github.com/rpjohnst/winapi-rs"
+
+[target.x86_64-pc-windows-gnu.dependencies.comctl32-sys]
+git = "https://github.com/rpjohnst/winapi-rs"
